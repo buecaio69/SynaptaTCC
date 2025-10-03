@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.tcc.app-mergeDebugResources-24:/values-v24/values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\caiob\\.gradle\\caches\\8.13\\transforms\\459cb14f885dfe9984b3b738a7946fbf\\transformed\\appcompat-1.7.0\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

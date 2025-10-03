@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxhdpi-v26_ic_launcher_monochrome.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxhdpi-v26/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/xml_config.xml.flat",
+        "source": "com.example.tcc.app-main-28:/xml/config.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-ldpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-ldpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-ldpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-ldpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xhdpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xhdpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xhdpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xhdpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-hdpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-hdpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxxhdpi-v26_ic_launcher_monochrome.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxxhdpi-v26/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-hdpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-hdpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-mdpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-mdpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-mdpi-v26_ic_launcher_monochrome.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-mdpi-v26/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxhdpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxhdpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-hdpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-hdpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-mdpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-mdpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-mdpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-mdpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxxhdpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxxhdpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxhdpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxhdpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/drawable_ic_cdv_splashscreen.xml.flat",
+        "source": "com.example.tcc.app-main-28:/drawable/ic_cdv_splashscreen.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xhdpi-v26_ic_launcher_monochrome.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xhdpi-v26/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxxhdpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxxhdpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-hdpi-v26_ic_launcher_monochrome.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-hdpi-v26/ic_launcher_monochrome.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-ldpi_ic_launcher.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xhdpi-v26_ic_launcher_foreground.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xhdpi-v26/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxxhdpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxxhdpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-ldpi-v26_ic_launcher_background.png.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-ldpi-v26/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/mipmap-xxhdpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.tcc.app-main-28:/mipmap-xxhdpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.tcc.app-debug-26:/xml_cdv_core_file_provider_paths.xml.flat",
+        "source": "com.example.tcc.app-main-28:/xml/cdv_core_file_provider_paths.xml"
+    }
+]

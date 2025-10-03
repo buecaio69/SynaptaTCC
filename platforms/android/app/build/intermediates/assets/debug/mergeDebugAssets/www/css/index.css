@@ -1,0 +1,820 @@
+SISTEMA DE CORES:
+- Primária: #00D4AA (verde água)
+- Secundária: #1a4d3a (verde escuro)
+- Acentos: #FF6B6B (vermelho), #4ECDC4 (azul água)
+- Background: #ffffff com filtro de brilho 87%
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* CONFIGURAÇÃO DO BODY */
+/* VARIÁVEIS: background, color, min-height, overflow */
+/* LÓGICA: Define fundo branco com filtro de brilho para suavizar */
+body {
+    background: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: brightness(87%);
+    color: rgb(0, 0, 0);
+    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* PÁGINA 1: TELA INICIAL */
+/* FUNÇÃO: Container principal da tela inicial */
+/* VARIÁVEIS: display, flex-direction, justify-content, align-items, min-height, padding */
+/* LÓGICA: Centraliza conteúdo verticalmente e horizontalmente */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* SEÇÃO DO LOGO */
+/* FUNÇÃO: Container para logo e nome da aplicação */
+/* VARIÁVEIS: margin-bottom */
+/* LÓGICA: Espaçamento inferior para separar do botões */
+.logo-section {
+    margin-bottom: 60px;
+}
+
+/* CONTAINER DO LOGO */
+/* FUNÇÃO: Centraliza a imagem do logo */
+/* VARIÁVEIS: margin-bottom, display, justify-content, align-items */
+.logo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGEM DO LOGO */
+/* FUNÇÃO: Exibe a imagem do logo SYNAPTA */
+/* VARIÁVEIS: width, height, object-fit */
+/* LÓGICA: Tamanho fixo com proporção mantida */
+.logo-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+/* NOME DA APLICAÇÃO */
+/* FUNÇÃO: Exibe o título "SYNAPTA" */
+/* VARIÁVEIS: font-size, font-weight, color, letter-spacing, text-shadow */
+/* LÓGICA: Estilo destacado com cor primária e sombra */
+.app-name {
+    font-size: 36px;
+    font-weight: 700;
+    color: #00D4AA;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* SEÇÃO DOS BOTÕES */
+/* FUNÇÃO: Container para botões de ação principal */
+/* VARIÁVEIS: display, flex-direction, gap, width, max-width */
+/* LÓGICA: Layout vertical com espaçamento entre botões */
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 280px;
+}
+
+/* BOTÕES DE AÇÃO GERAL */
+/* FUNÇÃO: Estilo base para todos os botões de ação */
+/* VARIÁVEIS: width, padding, border, border-radius, font-size, font-weight, cursor, transition */
+/* LÓGICA: Botões responsivos com efeitos de hover e transições suaves */
+.action-btn {
+    width: 100%;
+    padding: 18px 30px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* BOTÃO DE LOGIN */
+/* FUNÇÃO: Botão principal para login */
+/* VARIÁVEIS: background, color, box-shadow */
+/* LÓGICA: Cor primária com sombra para destaque */
+.login-btn {
+    background: #00D4AA;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+/* EFEITO HOVER - LOGIN */
+/* FUNÇÃO: Animação ao passar o mouse */
+/* VARIÁVEIS: background, transform, box-shadow */
+.login-btn:hover {
+    background: #00B894;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 170, 0.4);
+}
+
+/* EFEITO ACTIVE - LOGIN */
+/* FUNÇÃO: Animação ao clicar */
+/* VARIÁVEIS: transform */
+.login-btn:active {
+    transform: translateY(0);
+}
+
+/* BOTÃO DE CADASTRO */
+/* FUNÇÃO: Botão secundário para cadastro */
+/* VARIÁVEIS: background, color, border */
+/* LÓGICA: Estilo outline com cor primária */
+.register-btn {
+    background: transparent;
+    color: #00D4AA;
+    border: 2px solid #00D4AA;
+}
+
+/* EFEITO HOVER - CADASTRO */
+/* FUNÇÃO: Animação ao passar o mouse */
+/* VARIÁVEIS: background, color, transform, box-shadow */
+.register-btn:hover {
+    background: #00D4AA;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 170, 0.3);
+}
+
+/* EFEITO ACTIVE - CADASTRO */
+/* FUNÇÃO: Animação ao clicar */
+/* VARIÁVEIS: transform */
+.register-btn:active {
+    transform: translateY(0);
+}
+
+.patient-btn {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.patient-btn:hover {
+    background: linear-gradient(135deg, #FF5252, #FF7979);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.patient-btn:active {
+    transform: translateY(0);
+}
+
+.patient-login-btn {
+    background: linear-gradient(135deg, #4ECDC4, #44A08D);
+    color: white;
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.patient-login-btn:hover {
+    background: linear-gradient(135deg, #3DB5AC, #3A8B7A);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
+}
+
+.patient-login-btn:active {
+    transform: translateY(0);
+}
+
+/* CONTAINERS DE FORMULÁRIOS E MENUS */
+/* FUNÇÃO: Containers para todas as telas de formulário e menu */
+/* VARIÁVEIS: position, top, left, width, height, background, z-index, display, flex-direction, padding */
+/* LÓGICA: Overlay fixo cobrindo toda a tela com fundo verde escuro */
+/* APLICA-SE A: .menu-container, .login-container, .patient-login-container, .register-container, .patient-container, .forgot-password-container */
+.menu-container,
+.login-container,
+.patient-login-container,
+.register-container,
+.patient-container,
+.forgot-password-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background: #1a4d3a;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.menu-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* ÍCONE DO MENU */
+/* FUNÇÃO: Ícone centralizado acima do título do menu */
+/* VARIÁVEIS: margin-bottom, text-align, color, font-size */
+/* LÓGICA: Ícone grande e destacado para representar a seção */
+.menu-icon {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #00D4AA;
+    font-size: 48px;
+}
+
+.menu-wrapper h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00D4AA;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.menu-btn {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    border: 2px solid rgba(0, 212, 170, 0.3);
+}
+
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 170, 0.3);
+}
+
+.menu-btn span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu-btn small {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.caregiver-btn {
+    border-color: #00D4AA;
+}
+
+.caregiver-btn:hover {
+    border-color: #00D4AA;
+    box-shadow: 0 6px 20px rgba(0, 212, 170, 0.4);
+}
+
+.patient-btn {
+    border-color: #4ECDC4;
+}
+
+.patient-btn:hover {
+    border-color: #4ECDC4;
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
+}
+
+.patient-add-btn {
+    border-color: #FF6B6B;
+}
+
+.patient-add-btn:hover {
+    border-color: #FF6B6B;
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: rgba(0, 212, 170, 0.2);
+    border: 2px solid #00D4AA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #00D4AA;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1;
+}
+
+/* CENTRALIZAÇÃO PERFEITA DA SETA */
+/* FUNÇÃO: Garante que o ícone fique perfeitamente centralizado */
+/* VARIÁVEIS: display, align-items, justify-content, text-align */
+.back-btn i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1;
+}
+
+.back-btn:hover {
+    background: #00D4AA;
+    color: white;
+    transform: scale(1.1);
+}
+
+.form-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.form-wrapper h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00D4AA;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login-form,
+.register-form,
+.patient-form,
+.patient-login-form,
+.forgot-password-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* FORMULÁRIO DE PACIENTE - ESPAÇAMENTO MAIOR */
+/* FUNÇÃO: Espaçamento específico para formulário de adicionar paciente */
+/* VARIÁVEIS: gap */
+/* LÓGICA: Maior espaçamento entre campos para melhor organização */
+.patient-form {
+    gap: 25px;
+}
+
+/* FORMULÁRIO DE LOGIN PACIENTE - ESPAÇAMENTO MAIOR */
+/* FUNÇÃO: Espaçamento específico para formulário de login do paciente */
+/* VARIÁVEIS: gap */
+/* LÓGICA: Maior espaçamento entre campos para melhor organização */
+.patient-login-form {
+    gap: 25px;
+}
+
+/* GRUPOS DE INPUT DO FORMULÁRIO DE PACIENTE */
+/* FUNÇÃO: Espaçamento adicional entre campos do formulário de paciente */
+/* VARIÁVEIS: margin-bottom */
+/* LÓGICA: Espaçamento extra para melhor separação visual */
+.patient-form .input-group {
+    margin-bottom: 5px;
+}
+
+/* GRUPOS DE INPUT DO FORMULÁRIO DE LOGIN PACIENTE */
+/* FUNÇÃO: Espaçamento adicional entre campos do formulário de login do paciente */
+/* VARIÁVEIS: margin-bottom */
+/* LÓGICA: Espaçamento extra para melhor separação visual */
+.patient-login-form .input-group {
+    margin-bottom: 5px;
+}
+
+/* GRUPOS DE INPUT */
+/* FUNÇÃO: Container para campos de entrada com posicionamento relativo */
+/* VARIÁVEIS: position */
+/* LÓGICA: Permite posicionamento absoluto de elementos filhos */
+.input-group {
+    position: relative;
+}
+
+/* CAMPOS DE INPUT */
+/* FUNÇÃO: Estilo para todos os campos de entrada */
+/* VARIÁVEIS: width, padding, border, border-radius, background, color, font-size, transition, outline */
+/* LÓGICA: Campos transparentes com borda colorida e transições suaves */
+.input-group input {
+    width: 100%;
+    padding: 18px 20px;
+    border: 2px solid rgba(0, 212, 170, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* ESTADO FOCUS - INPUT */
+/* FUNÇÃO: Estilo quando o campo está em foco */
+/* VARIÁVEIS: border-color, background, box-shadow */
+/* LÓGICA: Destaca o campo ativo com cor primária e sombra */
+.input-group input:focus {
+    border-color: #00D4AA;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.2);
+}
+
+/* PLACEHOLDER DOS INPUTS */
+/* FUNÇÃO: Estilo do texto placeholder */
+/* VARIÁVEIS: color */
+/* LÓGICA: Texto semi-transparente para melhor contraste */
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.select-input {
+    width: 100%;
+    padding: 18px 20px;
+    border: 2px solid rgba(0, 212, 170, 0.3);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    outline: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300D4AA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.select-input:focus {
+    border-color: #00D4AA;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 3px rgba(0, 212, 170, 0.2);
+}
+
+.select-input option {
+    background: #1a4d3a;
+    color: white;
+    padding: 10px;
+}
+
+.forgot-password {
+    color: #00D4AA;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: right;
+    margin-top: -10px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #00B894;
+    text-decoration: underline;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: #00D4AA;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background: #00B894;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 212, 170, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* PÁGINA 8: RECUPERAÇÃO DE SENHA */
+/* FUNÇÃO: Estilos específicos para tela de recuperação de senha */
+/* VARIÁVEIS: text-align, color, margin, font-size, line-height */
+/* LÓGICA: Descrição centralizada com espaçamento adequado */
+.forgot-password-description {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* AÇÕES DE RECUPERAÇÃO DE SENHA */
+/* FUNÇÃO: Container para links de ação */
+/* VARIÁVEIS: margin-top, text-align */
+.forgot-password-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* LINK VOLTAR AO LOGIN */
+/* FUNÇÃO: Link para voltar à tela de login */
+/* VARIÁVEIS: color, text-decoration, font-size, display, align-items, gap, transition */
+/* LÓGICA: Link estilizado com ícone e efeito hover */
+.back-to-login {
+    color: #00D4AA;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-to-login:hover {
+    color: #00B894;
+    text-decoration: underline;
+}
+
+.back-to-login i {
+    font-size: 12px;
+}
+
+/* Animações de transição */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-20px); }
+}
+
+/* RESPONSIVIDADE - MOBILE (até 480px) */
+/* FUNÇÃO: Ajustes para dispositivos móveis pequenos */
+/* VARIÁVEIS: max-width: 480px */
+/* LÓGICA: Reduz tamanhos e espaçamentos para telas menores */
+@media (max-width: 480px) {
+    /* LOGO MAIOR EM MOBILE */
+    /* FUNÇÃO: Aumenta o logo para melhor visibilidade em mobile */
+    .logo-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    /* NOME DA APLICAÇÃO MENOR */
+    /* FUNÇÃO: Reduz tamanho da fonte para mobile */
+    .app-name {
+        font-size: 28px;
+        letter-spacing: 1px;
+    }
+    
+    /* BOTÕES RESPONSIVOS */
+    /* FUNÇÃO: Ajusta seção de botões para mobile */
+    .buttons-section {
+        max-width: 100%;
+        gap: 15px;
+    }
+    
+    /* BOTÕES DE AÇÃO MENORES */
+    /* FUNÇÃO: Reduz padding e fonte dos botões */
+    .action-btn {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    
+    /* TÍTULOS DE FORMULÁRIO MENORES */
+    /* FUNÇÃO: Ajusta tamanho dos títulos */
+    .form-wrapper h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .menu-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .menu-wrapper h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    /* BOTÕES DE MENU MENORES */
+    /* FUNÇÃO: Ajusta botões de menu para mobile */
+    .menu-btn {
+        padding: 15px;
+    }
+    
+    .menu-btn span {
+        font-size: 16px;
+    }
+    
+    .menu-btn small {
+        font-size: 12px;
+    }
+    
+    /* FORMULÁRIO DE PACIENTE EM MOBILE */
+    /* FUNÇÃO: Ajusta espaçamento do formulário de paciente para mobile */
+    .patient-form {
+        gap: 20px;
+    }
+    
+    .patient-form .input-group {
+        margin-bottom: 3px;
+    }
+    
+    /* FORMULÁRIO DE LOGIN PACIENTE EM MOBILE */
+    /* FUNÇÃO: Ajusta espaçamento do formulário de login do paciente para mobile */
+    .patient-login-form {
+        gap: 20px;
+    }
+    
+    .patient-login-form .input-group {
+        margin-bottom: 3px;
+    }
+    
+    /* INPUTS MENORES */
+    /* FUNÇÃO: Ajusta campos de entrada para mobile */
+    .input-group input {
+        padding: 15px 18px;
+        font-size: 15px;
+    }
+    
+    .select-input {
+        padding: 15px 18px;
+        font-size: 15px;
+        padding-right: 45px;
+        background-size: 18px;
+    }
+    
+    /* BOTÕES DE SUBMIT MENORES */
+    /* FUNÇÃO: Ajusta botões de envio */
+    .submit-btn {
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    /* BOTÃO VOLTAR MENOR */
+    /* FUNÇÃO: Ajusta botão de voltar */
+    .back-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    /* CENTRALIZAÇÃO MOBILE DA SETA */
+    /* FUNÇÃO: Ajusta centralização para telas menores */
+    .back-btn i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .app-name {
+        font-size: 24px;
+    }
+    
+    .triangle-a::before {
+        top: -5px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid #00D4AA;
+    }
+    
+    .triangle-a::after {
+        bottom: -5px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 8px solid #00D4AA;
+    }
+    
+    .action-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .form-wrapper h2 {
+        font-size: 24px;
+    }
+    
+    .input-group input {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .select-input {
+        padding: 12px 15px;
+        font-size: 14px;
+        padding-right: 40px;
+        background-size: 16px;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Orientação landscape em mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .home-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+    
+    .logo-section {
+        margin-bottom: 0;
+    }
+    
+    .logo-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .app-name {
+        font-size: 24px;
+    }
+    
+    .buttons-section {
+        max-width: 200px;
+    }
+    
+    .form-wrapper {
+        padding: 20px 0;
+    }
+}

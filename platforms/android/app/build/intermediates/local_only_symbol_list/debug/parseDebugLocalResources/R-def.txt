@@ -1,0 +1,14 @@
+R_DEF: Internal format may change without notice
+local
+color cdv_splashscreen_background
+drawable ic_cdv_splashscreen
+mipmap ic_launcher
+mipmap ic_launcher_background
+mipmap ic_launcher_foreground
+mipmap ic_launcher_monochrome
+string activity_name
+string app_name
+string launcher_name
+style Theme.App.SplashScreen
+xml cdv_core_file_provider_paths
+xml config

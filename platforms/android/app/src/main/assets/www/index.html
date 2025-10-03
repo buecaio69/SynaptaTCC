@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!--
+    ESTRUTURA DE PÁGINAS:
+    1. TELA INICIAL (home-container) - Ponto de entrada da aplicação
+    2. MENU DE LOGIN (loginMenuContainer) - Seleção do tipo de login
+    3. MENU DE CADASTRO (registerMenuContainer) - Seleção do tipo de cadastro
+    4. LOGIN CUIDADOR (loginContainer) - Autenticação via email/senha
+    5. LOGIN PACIENTE (patientLoginContainer) - Autenticação via nome/data nascimento
+    6. CADASTRO CUIDADOR (registerContainer) - Criação de conta de cuidador
+    7. CADASTRO PACIENTE (patientContainer) - Adição de novo paciente autista
+    
+    VARIÁVEIS PRINCIPAIS:
+    - homeContainer: Container da tela inicial
+    - loginMenuContainer: Container do menu de login
+    - registerMenuContainer: Container do menu de cadastro
+    - loginContainer: Container do login do cuidador
+    - patientLoginContainer: Container do login do paciente
+    - registerContainer: Container do cadastro do cuidador
+    - patientContainer: Container do cadastro do paciente
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>SYNAPTA | TCC</title>
+</head>
+
+<body>
+    <!-- Pagina da tela inicial -->
+    <!-- V: home-container -->
+    <div class="home-container">
+        <div class="logo-section">
+            <div class="logo">
+                <img src="img/synaptas.png" alt="SYNAPTA Logo" class="logo-image">
+            </div>
+            <h1 class="app-name">SYNAPTA</h1>
+        </div>
+
+        <!-- coloquei um botao para login ou cadastro -->
+        <!-- ação: onclick="goToLoginMenu()" e onclick="goToRegisterMenu()" -->
+        <div class="buttons-section">
+            <button class="action-btn login-btn" onclick="goToLoginMenu()">
+                Login
+            </button>
+            <button class="action-btn register-btn" onclick="goToRegisterMenu()">
+                Criar Conta
+            </button>
+        </div>
+    </div>
+
+    <!-- Login -->
+    <!-- V: loginMenuContainer (display: none/flex) -->
+    <div class="menu-container" id="loginMenuContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-icon">
+                <i class="fi fi-ss-hospital"></i>
+            </div>
+            <h2>Escolha o tipo de Login</h2>
+            <div class="menu-buttons">
+                <!-- login cuidador -->
+                <!-- ação: onclick="goToLogin()" -->
+                <button class="menu-btn caregiver-btn" onclick="goToLogin()">
+                    <span>Login Cuidador</span>
+                    <small>Email e senha</small>
+                </button>
+                <!-- login paciente -->
+                <!-- ação: onclick="goToPatientLogin()" -->
+                <button class="menu-btn patient-btn" onclick="goToPatientLogin()">
+                    <span>Login Paciente</span>
+                    <small>Nome e data de nascimento</small>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagina de Cadastro -->
+    <!-- V: registerMenuContainer (display: none/flex) -->
+    <div class="menu-container" id="registerMenuContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-icon">
+                <i class="fi fi-ss-user-add"></i>
+            </div>
+            <h2>Escolha o tipo de Cadastro</h2>
+            <div class="menu-buttons">
+                <!-- cadastro cuidador -->
+                <!-- ação: onclick="goToRegister()" -->
+                <button class="menu-btn register-btn" onclick="goToRegister()">
+                    <span>Criar Conta</span>
+                    <small>Cadastro de cuidador</small>
+                </button>
+                <!-- add paciente -->
+                <!-- ação: onclick="goToPatient()" -->
+                <button class="menu-btn patient-add-btn" onclick="goToPatient()">
+                    <span>Adicionar Paciente</span>
+                    <small>Cadastro de paciente autista</small>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- pagina login do cuidador-->
+    <div class="login-container" id="loginContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="form-wrapper">
+            <h2>Login Cuidador</h2>
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                <a href="#" class="forgot-password" onclick="goToForgotPassword()">Esqueceu sua senha?</a>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- pagina do paciente-->
+    <!-- funcao: Autenticação de paciente via nome e data de nascimento -->
+    <div class="patient-login-container" id="patientLoginContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="form-wrapper">
+            <h2>Login Paciente</h2>
+            <form class="patient-login-form">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome do Paciente" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" placeholder="Data de Nascimento" required>
+                </div>
+                <button type="submit" class="submit-btn">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- cadastrooo do cuidador-->
+    <!-- funcap: criar conta pro cuidador -->
+    <!-- V: email válido, senha mínimo 6 caracteres, senhas coincidem, campos obrigatórios -->
+    <div class="register-container" id="registerContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="form-wrapper">
+            <h2>Criar Conta</h2>
+            <form class="register-form" id="registerForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Senha" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Confirmar senha" required>
+                </div>
+                <button type="submit" class="submit-btn">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cadastro do Paciente Rapido -->
+    <!-- oq pedir: idade entre 0-120, idade confere com data nascimento, campos obrigatórios -->
+    <!-- DESTINO DOS DADOS: simulatePatientRegister() -> API de cadastro de pacientes -->
+    <div class="patient-container" id="patientContainer" style="display: none;">
+        <div class="back-btn" onclick="goToHome()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="form-wrapper">
+            <h2>Adicionar Paciente</h2>
+            <form class="patient-form" id="patientForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="number" placeholder="Idade" min="0" max="120" required>
+                </div>
+<!--                Calendario-->
+                <div class="input-group">
+                    <input type="date" placeholder="Data de Nascimento" required>
+                </div>
+                <div class="input-group">
+                    <select class="select-input" required>
+                        <option value="">Nível de Autismo</option>
+                        <option value="leve">Leve (Nível 1)</option>
+                        <option value="moderado">Moderado (Nível 2)</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Responsável" required>
+                </div>
+                <button type="submit" class="submit-btn">Adicionar Paciente</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- recuperacao de senha (QUASE MORRI) | melhorar o bgl do email-->
+    <!-- FUNÇÃO: Recuperação de senha via email -->
+    <div class="forgot-password-container" id="forgotPasswordContainer" style="display: none;">
+        <div class="back-btn" onclick="goToLogin()">
+            <i class="fi fi-ss-arrow-left"></i>
+        </div>
+        <div class="form-wrapper">
+            <h2>Recuperar Senha</h2>
+            <p class="forgot-password-description">
+                Digite seu email e enviaremos um link para redefinir sua senha.
+            </p>
+            <form class="forgot-password-form" id="forgotPasswordForm">
+                <div class="input-group">
+                    <input type="email" placeholder="Digite seu email" required>
+                </div>
+                <button type="submit" class="submit-btn">Enviar Link de Recuperação</button>
+            </form>
+            <div class="forgot-password-actions">
+                <a href="#" onclick="goToLogin()" class="back-to-login">
+                    <i class="fi fi-ss-arrow-left"></i>
+                    Voltar ao Login
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
