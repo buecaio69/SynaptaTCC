@@ -1,2 +1,2 @@
-# Synapta
+# SynaptaTCC
 Projeto TCC
